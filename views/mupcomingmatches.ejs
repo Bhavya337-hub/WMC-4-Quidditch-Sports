@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Matches</title>
+    <link rel="stylesheet" href="/css/la.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a class="Quidditch">Quidditch Sports</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">  
+                <a class="active" href="/user/recentmatches">Recent Matches</a>
+                <a href="/user/upcomingmatches">Upcoming Matches</a>
+                <a href="/user/registeredmatches">Registered Matches</a>
+                <a href="/auth/logout">Logout</a>
+            </div>
+        </div>
+    </header>   
+    <section class="home">
+        <video class="video-slide" src="/videos/HP.mp4" autoplay muted loop></video>
+        <div class="content">
+            <h1>Recent <br> <span>Matches</span></h1>
+            <% for(var i = 0; i < matches.length; i++) {  %>
+                <main>
+                    <section class="battlelog">
+                        <div class="left-side">
+                            <div class="team">
+                                <h2><%- matches[i].clan1 -%></h2>
+                                <ul class="players">
+                                    <li><%- matches[i].t1u1-%></li>
+                                    <li><%- matches[i].t1u2-%></li>
+                                    <li><%- matches[i].t1u3-%></li>
+                                    <li><%- matches[i].t1u4-%></li>
+                                    <li><%- matches[i].t1u5-%></li>
+                                    <li><%- matches[i].t1u6-%></li>
+                                    <li><%- matches[i].t1u7-%></li>
+                                </ul>
+                            </div>
+            
+                            <div class="vs">VS</div> <!-- New addition for 'VS' -->
+            
+                            <div class="team">
+                                <h2><%- matches[i].clan2 -%></h2>
+                                <ul class="players">
+                                    <li><%- matches[i].t2u1-%></li>
+                                    <li><%- matches[i].t2u2-%></li>
+                                    <li><%- matches[i].t2u3-%></li>
+                                    <li><%- matches[i].t2u4-%></li>
+                                    <li><%- matches[i].t2u5-%></li>
+                                    <li><%- matches[i].t2u6-%></li>
+                                    <li><%- matches[i].t2u7-%></li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="right-side">
+                            <div class="date-time">
+                                <div class="date">Date and Time: <%- matches[i].date -%></div>
+                            </div>
+            
+                            <div class="team-results">
+                                <div class="team-result">
+                                    <h2>Winner</h2>
+                                    <div class="status win"><%- matches[i].status -%></div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="free-body">
+                            <a href="/user/upcomingmatch/<%= matches[i]._id %>"><button>Register</button></a>
+                        </div>
+                    </section>
+                </main> 
+            <% } %> 
+        </div>
+    </section> 
+    <script type="text/javascript">
+        //javascript of nav responsive menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        menuBtn.addEventListener("click",() => {menuBtn.classList.toggle("active");navigation.classList.toggle("active");});
+    </script>
+</body>
+</html>

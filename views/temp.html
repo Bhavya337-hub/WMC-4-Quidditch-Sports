@@ -1,0 +1,29 @@
+<div class="free-body">
+    <button>Button 1</button>
+    <button style="margin-left: 1rem;">Button 2</button>
+    <button style="margin-left: 1rem;">Button 3</button>
+</div>
+
+
+
+<section class="home">
+    <video class="video-slide" src="/videos/HP.mp4" autoplay muted loop></video>
+    <div class="content">
+      <h1>Create Match</h1>
+      <form action="/user/creatematch" method="post">
+        <div class="form-group">
+          <label for="Clan1">Clan1</label>
+          <input type="text" class="form-control" id="Clan1" placeholder="Enter Clan1" name="clan1">
+        </div>
+        <div class="form-group">
+          <label for="Clan2">Clan2</label>
+          <input type="text" class="form-control" id="Clan2" placeholder="Enter Clan2" name="clan2">
+        </div>
+        <div class="form-group">
+          <label for="date">Date and Time</label>
+          <input type="datetime-local" class="form-control" id="date" name="date">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+</section>

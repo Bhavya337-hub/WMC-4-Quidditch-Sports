@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Register Here...</title>
+  </head>
+  <body>
+    <header class="registration-header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">Quidditch Sports</a>
+        </div>
+        <nav>
+          <ul>
+            <li class="link">
+              <a href="/">Home</a>
+            </li>
+            <li class="link">
+              <a href="/gallery">Gallery</a>
+            </li>
+            <li class="link">
+              <a href="/auth/login">Login</a>
+            </li>
+            <li class="link">
+              <a href="/auth/register">Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main>
+        <section class="user-container login-section--display">
+          <div class="registration">
+            <div class="grid-two--column">
+              <div class="form-text">
+                <h2>Hello Friend !</h2>
+                <p>Enter your personal details and start journey with us</p>
+                <a href="/auth/login"><button class="login-btn">Login Here</button></a>
+              </div>
+              <div class="registration-form">
+                <h2>Create Account</h2>
+                <div class="social-icons">
+                  <a href="/auth/register" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="/auth/register" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="/auth/register" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="/auth/register" target="_blank">
+                    <i class="fa-brands fa-discord"></i>
+                  </a>
+                </div>
+                <p>or use your emails for registration</p>
+                <form action="/auth/register" method="post">
+                  <div class="input-field">
+                    <label for="username">
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Userame"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="Email">
+                      <input
+                        type="email"
+                        name="email"
+                        id="Email"
+                        placeholder="E-Mail"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="Password">
+                      <input
+                        type="password"
+                        name="password"
+                        id="Password"
+                        placeholder="Password"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="Clan">
+                      <input
+                        type="text"
+                        name="clan"
+                        id="Clan"
+                        placeholder="Clan Name"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="input-field">
+                    <input type="submit" value="Register">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </header>
+  </body>
+</html>
