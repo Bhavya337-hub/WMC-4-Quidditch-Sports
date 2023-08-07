@@ -72,16 +72,6 @@ section{
     background: #6AC923;
 }
 
-.home ::before{
-    z-index: 777;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-
-}
 
 .home .content{
     z-index: 888;
