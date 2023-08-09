@@ -44,7 +44,7 @@ The project follows a structured directory layout to ensure maintainability and 
 
 To run the Quidditch Sports Website locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/Bhavya337-hub/WMC-4-Quidditch-Sports/tree/main
+1. Clone this repository: https://github.com/kathan07/WMC-4-Quidditch-Sports/tree/main
 . Open `index.ejs` in your preferred web browser.
 
 ## Usage
