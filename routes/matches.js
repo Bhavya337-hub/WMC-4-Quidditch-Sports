@@ -15,14 +15,14 @@ router.get("/recentmatches", (req, res) => {
       Match.find({
         $or: [{ clan1: req.user.clan }, { clan2: req.user.clan }],
         date: { $lt: date },
-        status: { $ne: "not declared"},
+        status: { $ne: "not declared"}
       })
         .sort({ date: -1 })
         .then((matches) => {
           res.render("mrecentmatches", { matches: matches });
         });
     } else if (req.isAuthenticated() && req.user.status == "admin") {
-      Match.find({ date: { $lt: date } })
+      Match.find({ date: { $lt: date }, status: { $ne: "not declared"}})
         .sort({ date: -1 })
         .then((matches) => {
           res.render("arecentmatches", { matches: matches });
