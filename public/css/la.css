@@ -99,8 +99,7 @@ section{
 }
 
 .home .content a{
-    background: #fff;
-    padding: 15px 35px;
+    padding: 0 0 0 0.5rem;
     color: #1680AC;
     font-size: 1.1em;
     font-weight: 500;
