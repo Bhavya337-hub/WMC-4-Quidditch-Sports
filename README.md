@@ -27,18 +27,18 @@ The Quidditch Sports Website is designed to provide Quidditch enthusiasts with a
 ## Project Structure
 
 The project follows a structured directory layout to ensure maintainability and modularity:
-- `index.ejs`: The main HTML file containing the structure of the website.
+- `index.ejs`: The main landing page containing the structure of the website.
 - `css/`: Directory for cascading style sheets.
-  - `style.css`: Stylesheet defining the website authentication page using signin and register part.
+- `style.css`: Stylesheet defining the website authentication page using signin and register part.
 - `js/`: Directory for JavaScript files.
-  - `app.js`: Handles dynamic interactions and functionality related to the authentication part.
- - ‘match.js’: Handles dynamic interactions and functionality related to the matches handling part database. Starting from creating matches, updation of the matches, recent matches, upcoming matches, and many more
- - ‘user.js’: Database models to handle the user interaction part.
+- `auth.js`: Handles dynamic interactions and functionality related to the authentication part.
+- ‘match.js’: Handles dynamic interactions and functionality related to the matches handling part database. Starting from creating matches, updation of the matches, recent matches, upcoming matches, and many more
+- ‘user.js’: Database models to handle the user interaction part.
 - ‘Match.js’: It is a route that handles the process of transformation between the different pages.
 - `images/`: Directory for storing image assets.
 - `data/`: Directory for data files.
- - `videos`: Contains the video that runs in the background.
-  - `photos/`: Subdirectory for image files.
+- `videos`: Contains the video that runs in the background.
+- `photos/`: Subdirectory for image files.
 
 ## Installation
 
