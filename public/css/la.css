@@ -207,6 +207,8 @@ h2 {
     padding: 1rem;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    width: fit-content;
 }
 
 .team {

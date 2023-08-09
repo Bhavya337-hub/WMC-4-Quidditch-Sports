@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
-mongoose.connect("mongodb://127.0.0.1:27017/quidditchDB", {useNewUrlParser: true}); 
+mongoose.connect(process.env.MONGO_URL)
+.then(()=> {console.log("DB connection Succesful");})
+.catch((err)=> {console.log("DB failed to connect");}); 
 
 const UserSchema = new mongoose.Schema({
     username: {type: 'string',required: true,unique: true},

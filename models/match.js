@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/quidditchDB", {useNewUrlParser: true}); 
+mongoose.connect(process.env.MONGO_URL)
+.then(()=> {console.log("DB connection Succesful");})
+.catch((err)=> {console.log("DB failed to connect");});
 
 
 const MatchSchema = new mongoose.Schema({
